@@ -1,20 +1,21 @@
 export const site = {
   name: "GRD MAD",
   description:
-    "Fábrica de móveis planejados em Cotia/SP. Você projeta no Promob, nós cortamos em CNC, fitamos com cola PUR e entregamos caixas e gavetas montadas em 25 a 30 dias.",
+    "Fábrica de móveis planejados em São Paulo. Você projeta no Promob, nós cortamos em CNC, fitamos com cola PUR e entregamos caixas e gavetas montadas em 25 a 30 dias.",
   phoneDisplay: "(11) 97898-6350",
   phoneE164: "5511978986350",
   email: "contato@grdmad.com.br",
   cnpj: "07.222.560/0001-30",
   address: {
-    street: "Rua Monte Alegre, 664",
-    district: "Jd. Rebelato, Cotia – SP",
-    cep: "06710-610",
-    mapsQuery: "Rua Monte Alegre, 664, Jardim Rebelato, Cotia - SP, 06710-610",
+    street: "Rua Frei Liberato de Gries, 501",
+    district: "Jardim Arpoador, São Paulo – SP",
+    city: "São Paulo",
+    cep: "05572-210",
+    mapsQuery: "Rua Frei Liberato de Gries, 501, Jardim Arpoador, São Paulo - SP, 05572-210",
   },
   hours: "Segunda a sexta, 08h às 17h30",
   instagram: "https://www.instagram.com/grdmad/",
-  catalog: "/catalogo-de-cores-2026.pdf",
+  catalog: "https://grdmad.com.br/catalogo_novo_2026.pdf",
 };
 
 export function whatsappLink(message: string) {

@@ -20,7 +20,7 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "GRD MAD — Fábrica de móveis planejados em Cotia",
+    default: "GRD MAD — Fábrica de móveis planejados em São Paulo",
     template: "%s · GRD MAD",
   },
   description: site.description,

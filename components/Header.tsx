@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { nav } from "@/lib/site";
+import { nav, whatsappLink } from "@/lib/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -28,15 +28,22 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 lg:flex">
-          <Link href="/status-do-pedido" className="text-[13.5px] text-[#d9d3c8] hover:text-gold">
+          <a
+            href={whatsappLink("Olá, quero consultar o status de um pedido na GRD MAD.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[13.5px] text-[#d9d3c8] hover:text-gold"
+          >
             Status do pedido
-          </Link>
-          <Link
-            href="/#revendedor"
+          </a>
+          <a
+            href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-gold px-4 py-2 text-[13.5px] font-medium text-[#1a1408] transition hover:bg-[#f0c45c]"
           >
             Seja revendedor
-          </Link>
+          </a>
         </div>
 
         <button
@@ -67,20 +74,24 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/status-do-pedido"
+            <a
+              href={whatsappLink("Olá, quero consultar o status de um pedido na GRD MAD.")}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="border-b border-white/10 py-3 font-serif text-2xl"
             >
               Status do pedido
-            </Link>
-            <Link
-              href="/#revendedor"
+            </a>
+            <a
+              href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="mt-4 rounded-full bg-gold px-4 py-3 text-center font-medium text-[#1a1408]"
             >
               Seja revendedor
-            </Link>
+            </a>
           </nav>
         </div>
       )}

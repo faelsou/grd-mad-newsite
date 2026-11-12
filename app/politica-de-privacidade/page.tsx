@@ -17,18 +17,14 @@ export default function PrivacyPage() {
       />
       <div className="mt-10 space-y-6 text-sm leading-relaxed text-[#d9d3c8] md:text-base">
         <p>
-          A GRD MAD, CNPJ {site.cnpj}, com fábrica em {site.address.street}, {site.address.district}, coleta
-          apenas o que você informa no formulário de revenda ou na consulta de pedido: nome, loja, cidade e
-          WhatsApp.
+          A GRD MAD, CNPJ {site.cnpj}, com fábrica em {site.address.street}, {site.address.district}, não
+          coleta dados por formulário neste site. O contato acontece pelo WhatsApp {site.phoneDisplay}.
         </p>
         <p>
-          Usamos esses dados somente para retornar o contato, avaliar o cadastro de lojista e acompanhar
-          pedidos. Não vendemos listas e não usamos os dados para publicidade de terceiros.
-        </p>
-        <p>
-          O envio pelo botão do site abre uma conversa no WhatsApp. A mensagem fica no histórico daquele
-          aplicativo, conforme as regras da plataforma. O catálogo de cores é um arquivo público para
-          download.
+          A conversa fica no histórico do WhatsApp, conforme as regras da plataforma. Usamos o que você
+          envia por lá somente para retornar o contato, avaliar o cadastro de lojista e acompanhar pedidos.
+          Não vendemos listas e não usamos os dados para publicidade de terceiros. O catálogo de cores é um
+          arquivo público para download.
         </p>
         <p>
           Você pode pedir acesso, correção ou exclusão dos dados pelo e-mail {site.email} ou pelo WhatsApp{" "}

@@ -13,7 +13,7 @@ export default function StatusPage() {
       <PageIntro
         eyebrow="ACOMPANHAMENTO"
         title="Status do pedido."
-        text="A produção é confirmada pela fábrica. Informe o número do pedido ou do projeto Promob e falamos o estágio atual no WhatsApp."
+        text="A produção é confirmada pela fábrica. Chame no WhatsApp e informe o número do pedido ou do projeto Promob para saber o estágio atual."
       />
       <OrderStatus />
     </main>

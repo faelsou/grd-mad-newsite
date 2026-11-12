@@ -32,7 +32,7 @@ export default function TermsPage() {
           de agenda e da região de atendimento.
         </p>
         <p>
-          Dúvidas sobre estes termos: {site.email}. Foro da comarca de Cotia/SP.
+          Dúvidas sobre estes termos: {site.email}. Foro da comarca de São Paulo/SP.
         </p>
       </div>
     </main>

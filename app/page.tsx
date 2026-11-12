@@ -1,8 +1,6 @@
-import Link from "next/link";
 import { Arrow, Check, ClockIcon, CubeIcon, PeopleIcon, Play } from "@/components/Icons";
 import { FaqList } from "@/components/FaqList";
 import { Portfolio } from "@/components/Portfolio";
-import { ResellerForm } from "@/components/ResellerForm";
 import { differentials, novelties, partners, site, steps, whatsappLink } from "@/lib/site";
 
 const icons = {
@@ -42,8 +40,8 @@ export default function Home() {
 
         <div className="relative mx-auto flex min-h-[92svh] max-w-[1180px] flex-col justify-end px-5 pb-16 pt-16 md:justify-center md:px-8 md:py-24">
           <p className="text-[11px] font-medium tracking-[0.18em] text-gold md:text-xs md:tracking-[0.22em]">
-            <span className="md:hidden">FÁBRICA · COTIA/SP · DESDE 2014</span>
-            <span className="hidden md:inline">FÁBRICA DE MÓVEIS PLANEJADOS · COTIA/SP · DESDE 2014</span>
+            <span className="md:hidden">FÁBRICA · DESDE 2014</span>
+            <span className="hidden md:inline">FÁBRICA DE MÓVEIS PLANEJADOS · DESDE 2014</span>
           </p>
           <h1 className="mt-4 max-w-[14ch] font-serif text-[2.65rem] leading-[1.02] tracking-[-0.02em] text-[#f7f3ec] md:max-w-[19.5ch] md:text-6xl lg:text-[4.4rem]">
             A fábrica por trás de lojistas que entregam no prazo.
@@ -59,15 +57,18 @@ export default function Home() {
           </p>
 
           <div className="mt-8 hidden flex-wrap items-center gap-3 md:flex">
-            <Link
-              href="/#revendedor"
+            <a
+              href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-medium text-[#1a1408] transition hover:bg-[#f0c45c]"
             >
               Quero ser revendedor <Arrow />
-            </Link>
+            </a>
             <a
               href={site.catalog}
-              download
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center rounded-full border border-white/30 px-5 py-3 text-sm text-[#f6f1e8] transition hover:border-gold hover:text-gold"
             >
               Baixar catálogo de cores 2026
@@ -134,12 +135,14 @@ export default function Home() {
               <p className="text-sm text-[#d9d3c8]">R$ 10 a 24,9 mil</p>
               <p className="text-right text-sm font-medium text-gold">50% da licença</p>
             </div>
-            <Link
-              href="/#revendedor"
+            <a
+              href={whatsappLink("Olá, quero aproveitar a licença Promob da GRD MAD.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-1 rounded-full bg-gold py-3 text-center text-sm font-medium text-[#1a1408] transition hover:bg-[#f0c45c]"
             >
               Quero aproveitar
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -204,7 +207,7 @@ export default function Home() {
               Venha ver de perto. A porta está aberta.
             </h2>
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted md:text-base">
-              1.200 m² em Cotia, a poucos minutos do Rodoanel, com centro de furação CNC e linha própria de
+              1.200 m² em São Paulo, no Jardim Arpoador, com centro de furação CNC e linha própria de
               montagem. Empresa familiar, gerida pelos mesmos donos desde 2014.
             </p>
             <p className="mt-8 text-sm font-medium text-[#f6f1e8]">Novidades da linha</p>
@@ -216,7 +219,9 @@ export default function Home() {
               ))}
             </ul>
             <a
-              href={whatsappLink("Olá, quero agendar uma visita à fábrica da GRD MAD em Cotia.")}
+              href={whatsappLink("Olá, quero agendar uma visita à fábrica da GRD MAD.")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-flex rounded-full border border-white/25 px-5 py-3 text-sm text-[#f6f1e8] transition hover:border-gold hover:text-gold"
             >
               Agendar visita à fábrica
@@ -263,7 +268,7 @@ export default function Home() {
               <span className="text-left text-xs leading-snug text-ink-soft">
                 Avaliações da fábrica
                 <br />
-                em Cotia
+                em São Paulo
               </span>
             </a>
           </div>
@@ -360,7 +365,12 @@ export default function Home() {
               <div>
                 <dt className="text-sm text-gold">WhatsApp</dt>
                 <dd className="mt-2 text-sm">
-                  <a className="text-[#f6f1e8] underline-offset-4 hover:underline" href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}>
+                  <a
+                    className="text-[#f6f1e8] underline-offset-4 hover:underline"
+                    href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {site.phoneDisplay}
                   </a>
                 </dd>
@@ -376,7 +386,7 @@ export default function Home() {
             </dl>
             <div className="mt-8 overflow-hidden rounded-3xl border border-dashed border-white/15">
               <iframe
-                title="Mapa — Rua Monte Alegre, 664, Cotia"
+                title="Mapa — Rua Frei Liberato de Gries, 501, São Paulo"
                 src={maps}
                 className="h-64 w-full grayscale"
                 loading="lazy"
@@ -384,7 +394,14 @@ export default function Home() {
               />
             </div>
           </div>
-          <ResellerForm />
+          <a
+            href={whatsappLink("Olá, quero ser revendedor da GRD MAD.")}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-fit items-center justify-center self-center rounded-full bg-gold px-8 py-3.5 text-sm font-medium text-[#1a1408] transition hover:bg-[#f0c45c] max-lg:w-full"
+          >
+            Chamar no WhatsApp
+          </a>
         </div>
       </section>
 
@@ -401,7 +418,7 @@ export default function Home() {
             address: {
               "@type": "PostalAddress",
               streetAddress: site.address.street,
-              addressLocality: "Cotia",
+              addressLocality: site.address.city,
               addressRegion: "SP",
               postalCode: site.address.cep,
               addressCountry: "BR",

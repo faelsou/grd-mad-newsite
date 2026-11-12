@@ -6,7 +6,8 @@ export function MobileCta() {
       <div className="grid grid-cols-2 gap-3">
         <a
           href={site.catalog}
-          download
+          target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-3 py-3 text-sm text-[#f6f1e8]"
         >
           <DownloadIcon />
@@ -14,6 +15,8 @@ export function MobileCta() {
         </a>
         <a
           href={whatsappLink("Olá, quero falar com a GRD MAD sobre revenda de móveis planejados.")}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-3 py-3 text-sm font-medium text-[#1a1408]"
         >
           <WhatsIcon />
